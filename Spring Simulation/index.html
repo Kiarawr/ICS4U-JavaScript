@@ -1,0 +1,53 @@
+<html id="html">
+    <head>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload = playSim() id="body">
+        <h2 id="title">Vertical Spring Simulation</h2>
+
+        <div id = "display">
+
+            <p>Acceleration : m/s<sup>2</sup></p>
+            <p id = "accelerationOutput"></p>
+
+            <p>Velocity : m/s</p>
+            <p id = "velocityOutput"></p>
+
+            <p>Period : s</p>
+            <p id = "periodOutput"></p>
+
+            <p>Animation Speed :</p>
+            <button onclick="pause()" class="button" id="pauseButton"></button>
+            <button onclick="play()" class="button" id="playButton"></button>
+            <input type="range" min="0.001" max="0.05" value="0.03" step = "0.001" id="animationSlider">
+
+        </div>
+
+        <div id = "controls">
+ 
+            <p>Spring Constant : N/m</p>
+            <input type="range" min="1" max="50" value="10" step = "0.1" class="slider" id="kSliderRange">
+            <input type="number" min="1" max="50" value="10" step = "0.1" class="input" id="kInput" onkeypress="readInput(event)">
+
+            <p>Mass of Ball : kg</p>
+            <input type="range" min="1" max="50" value="10" step = "0.1" class="slider" id="massSliderRange">
+            <input type="number" min="1" max="50" value="10" step = "0.1" class="input" id="massInput" onkeypress="readInput(event)">
+
+            <p>Gravity : m/s<sup>2</sup></p>
+            <input type="range" min="0" max="50" value="10" step = "0.1" class="slider" id="gravitySliderRange">
+            <input type="number" min="0" max="50" value="10" step = "0.1" class="input" id="gravityInput" onkeypress="readInput(event)">
+
+            <p>Damping : kg/s</p>
+            <input type="range" min="0" max="10" value="0" step = "0.1" class="slider" id="dampingSliderRange">
+            <input type="number" min="0" max="10" value="0" step = "0.1" class="input" id="dampingInput" onkeypress="readInput(event)">
+            
+            <p>Moveable Line :</p>
+            <div id = "moveableLine">
+                <hr>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+#body {
+    display: inline-block;
+    font-family: arial;
+} 
+
+#title{
+    padding: 20px;
+    background-color: #A0C8E1;
+}
+
+#display{
+    float:right;
+    margin-right: 30px;
+}
+
+#controls{
+    width: 450;
+    float:right;
+}
+
+.button{
+    width:30px;
+    height: 30px;
+    background-size: 100%;
+    border:1px solid#d3d3d3;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.button:hover{
+    border:1px solid#a5a5a5;
+}
+
+#pauseButton{
+    background-image: url("images/pause.png");
+}
+
+#playButton{
+    background-image: url("images/play.png");
+}
+
+.slider{
+    -webkit-appearance: none; /* overrides default look */
+    width: 300px;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    display: inline-block;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    background: #77B1D6; 
+    cursor: pointer; 
+}
+
+.input {
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.input:hover{
+    border-radius: 4px;
+    border: 1px solid #a5a5a5;
+}
+
+.input:focus{
+    border-radius: 4px;
+    border: 1px solid #a5a5a5;
+    outline: none;
+} 
+
+hr{
+    border: 2px solid #d3d3d3;
+    border-radius: 4px;
+    width: 380px;
+}
+
+#moveableLine{
+    position: absolute;
+}
+
+#animationSlider{
+    -webkit-appearance: none;
+    width: 150px;
+    height: 8px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    display: inline-block;
+}
+
+#animationSlider:hover{
+    opacity: 1;
+}
+
+#animationSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px; 
+    height: 15px; 
+    border-radius: 50%;
+    background: #77B1D6; 
+    cursor: pointer; 
+}
